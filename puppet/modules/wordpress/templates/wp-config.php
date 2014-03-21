@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', '<%= @db_name %>');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', '<%= @db_user %>');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wordpress');
+define('DB_PASSWORD', '<%= @db_password %>');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -69,7 +69,7 @@ $table_prefix  = 'wp_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define('WPLANG', '<%= @wp_lang %>');
 
 /**
  * For developers: WordPress debugging mode.
